@@ -1,12 +1,13 @@
 .herounit {
   background: url('../img/hero-small.png') no-repeat;
   background-position: center bottom;
+  background-size: cover;
   min-height: rem-calc(650);
   width: 100%;
 
   @include breakpoint(medium up) {
     background: url('../img/hero-medium.png') no-repeat;
-    // background-size: cover;
+    background-size: cover;
     background-position: center bottom;
     min-height: rem-calc(650);
     width: 100%;
