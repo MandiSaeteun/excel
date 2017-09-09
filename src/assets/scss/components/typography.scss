@@ -13,21 +13,11 @@ section {
   padding-bottom: rem-calc(50);
 
   @include breakpoint(medium) {
-    // &:first-of-type {
-    //   padding-top: rem-calc(200);
-    //   padding-bottom: rem-calc(100);
-    // }
-
     padding-top: rem-calc(100);
     padding-bottom: rem-calc(100);
   }
 
   @include breakpoint(large) {
-    // &:first-of-type {
-    //   padding-top: rem-calc(175);
-    //   padding-bottom: rem-calc(100);
-    // }
-
     padding-top: rem-calc(100);
     padding-bottom: rem-calc(100);
   }
@@ -220,8 +210,6 @@ footer {
   h1, p {
     color: $white;
   }
-
-
 
   h1 {
     font-size: rem-calc(26);
