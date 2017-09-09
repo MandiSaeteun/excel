@@ -120,10 +120,12 @@
 // Footer
 footer {
 
-  .border-right {
-    border-right: 1px solid #E1E1E1;
+  @include breakpoint(medium up) {
+    .border-right {
+      border-right: 1px solid #E1E1E1;
+    }
   }
-
+  
   li {
     list-style-type: none;
 
