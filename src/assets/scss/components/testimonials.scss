@@ -1,0 +1,66 @@
+.card.testimonial {
+
+  p {
+    text-align: left;
+    font-size: rem-calc(20);
+  }
+
+  .testimonial-info {
+    position: relative;
+    margin-top: rem-calc(36);
+
+    img {
+      position: absolute;
+      width: rem-calc(80);
+      height: rem-calc(80);
+      left: 0;
+      top: 0;
+      margin-right: rem-calc(16);
+    }
+
+    .testimonial-name {
+      margin-left: rem-calc(115);
+      padding-top: rem-calc(0);
+    }
+
+    span {
+      display: block;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: 900;
+      letter-spacing: .75px;
+      font-size: rem-calc(20);
+    }
+  }
+}
+
+.email-us {
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.client-logos {
+  margin-top: rem-calc(45);
+  margin-bottom: rem-calc(80);
+  display: block;
+  text-align: center;
+
+  li {
+    display: inline-block;
+  }
+
+  img {
+    margin: rem-calc(8) rem-calc(12) rem-calc(8) rem-calc(0);
+    height: rem-calc(40);
+    width: auto;
+
+    @include breakpoint(medium) {
+      margin: auto rem-calc(8);
+      height: rem-calc(60);
+    }
+
+    @include breakpoint(large up) {
+      margin: auto rem-calc(8);
+      height: rem-calc(75);
+    }
+  }
+}

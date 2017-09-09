@@ -1,0 +1,368 @@
+.navigation {
+  background-color: $white;
+  box-shadow: 0px -2px 15px #939393;
+  position: relative;
+  z-index: 1;
+  display: block;
+  position: fixed;
+  width: 100%;
+  padding: rem-calc(12 20 12 12);
+
+  li {
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  .navigation-service-types {
+    padding: rem-calc(0 3);
+    margin-left: 0;
+
+    li {
+      margin: rem-calc(3) auto;
+      text-align: center;
+      padding: rem-calc(3);
+
+      &:hover {
+        background: $dark-blue;
+        -webkit-transition: .15s ease-in-out;
+        -moz-transition: .15s ease-in-out;
+        -ms-transition: .15s ease-in-out;
+        -o-transition: .15s ease-in-out;
+        transition: .15s ease-in-out;
+
+        a {color: $white;}
+      }
+
+      a:hover {
+        color: $white;
+      }
+
+    }
+  }
+
+  .excel-logo img {
+    display: block;
+    margin: 0 auto;
+    width: auto;
+    padding: rem-calc(6 12 6 12);
+    max-height: rem-calc(42);
+    margin-bottom: rem-calc(6);
+
+    @include breakpoint(large) {
+      float: left;
+      margin-bottom: rem-calc(0);
+      max-height: rem-calc(45);
+    }
+  }
+}
+
+.navigation-links {
+  text-align: center;
+
+  @include breakpoint(large) {
+    margin-top: rem-calc(4);
+    text-align: right;
+  }
+
+  li a {
+    font-weight: 600;
+    letter-spacing: .75px;
+    color: $dark-grey;
+
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+
+  .navigation-contact-call {
+    color: $dark-blue;
+    padding-right: rem-calc(18);
+    padding-left: rem-calc(18);
+    font-weight: 600;
+    letter-spacing: .75px;
+
+    @include breakpoint(medium up) {
+      border-left: 1px solid #E1E1E1;
+      padding-right: rem-calc(18);
+      padding-left: rem-calc(18);
+    }
+  }
+
+  .navigation-contact-quote {
+    color: $white;
+    margin: 0;
+    animation:myfirst 5s;
+    -moz-animation:myfirst 5s infinite; /* Firefox */
+    -webkit-animation:myfirst 5s infinite; /* Safari and Chrome */
+    @-moz-keyframes myfirst /* Firefox */
+    {
+      0%   {background:#00B3EB}
+      50%  {background:#4182D7}
+      100%   {background:#00B3EB}
+    }
+
+    @-webkit-keyframes myfirst /* Firefox */
+    {
+      0%   {background:#00B3EB}
+      50%  {background:#4182D7}
+      100%   {background:#00B3EB}
+    }
+
+    &:hover {
+      color: $dark-blue;
+      animation: none;
+      background: transparent;
+      border: 1px solid $dark-blue;
+    }
+  }
+}
+
+// Footer
+footer {
+
+  .border-right {
+    border-right: 1px solid #E1E1E1;
+  }
+
+  li {
+    list-style-type: none;
+
+    a {
+      color: #6B7C93;
+      font-weight: 600;
+    }
+  }
+
+  .main-footer {
+    padding-top: rem-calc(12);
+    padding-bottom: rem-calc(12);
+    margin: rem-calc(24) auto;
+
+    .excel-logo {
+      display: block;
+      margin: 0 auto rem-calc(24) auto;
+
+      img {
+        max-height: rem-calc(35);
+      }
+
+      @include breakpoint(medium up) {
+        display: inline;
+        margin: 0 0 rem-calc(24) 0;
+      }
+    }
+
+    ul {
+      margin: rem-calc(6);
+    }
+
+    li {
+      text-align: center;
+
+      @include breakpoint(medium up) {
+        text-align: left;
+      }
+    }
+
+    a {
+      font-size: rem-calc(16);
+      font-weight: 600;
+      color: $dark-grey;
+
+      &:hover {
+        color: $dark-blue;
+      }
+
+      @include breakpoint(medium up) {
+        font-size: rem-calc(14);
+      }
+    }
+
+    .certification-logos {
+      margin-top: rem-calc(45);
+      display: block;
+
+      li {
+        display: inline-block;
+      }
+
+      img {
+        margin: rem-calc(8) rem-calc(12) rem-calc(8) rem-calc(0);
+        height: rem-calc(75);
+        width: auto;
+
+        @include breakpoint(large up) {
+          margin: auto rem-calc(11);
+          height: rem-calc(63);
+        }
+      }
+    }
+  }
+
+  .bottom-footer {
+    background: #35353B;
+    ul {
+      min-height: rem-calc(22);
+      margin: rem-calc(12);
+    }
+
+    li {
+      list-style-type: none;
+      display: block;
+      font-size: rem-calc(14);
+      color: $white;
+      font-weight: 700;
+      letter-spacing: .75;
+
+      &:first-child {
+        margin-left: rem-calc(0);
+      }
+
+      @include breakpoint(medium up) {
+        display: inline;
+
+        &.bottom-footer-copyright {
+          float: left;
+        }
+
+        &.bottom-footer-contact {
+          float: right !important;
+          margin-left: rem-calc(18);
+        }
+      }
+    }
+  }
+}
+
+.logos-bar {
+  text-align: center;
+  background: #35353B;
+
+  ul {
+    margin: rem-calc(10 0 6 0);
+    padding: rem-calc(0);
+  }
+
+  li {
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    margin: rem-calc(0 3);
+    &:first-child {margin-left: 0;}
+    &:last-of-type {margin-right: 0;}
+
+    @include breakpoint(medium) {
+      margin: rem-calc(0 4);
+    }
+
+    @include breakpoint(large up) {
+      margin: rem-calc(0 32);
+    }
+  }
+
+  .small-screen {
+    @include breakpoint(small only) {
+      display: none;
+    }
+  }
+
+  img {
+    opacity: .85;
+    width: auto;
+    max-height: rem-calc(32);
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+
+    @include breakpoint(medium up) {
+      max-height: rem-calc(36);
+    }
+  }
+}
+
+.contactus-footer {
+  background: url('../img/contact-us-now-1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: auto;
+  width: 100%;
+
+  @include breakpoint(medium up) {
+    max-height: rem-calc(500);
+  }
+}
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+  border-color: $dark-grey transparent transparent;
+}
+
+.off-canvas-menu {
+  font-size: rem-calc(18);
+  font-weight: 700;
+
+  ul {
+    padding: rem-calc(8);
+  }
+
+  li {list-style-type: none;}
+
+  a {
+    color: $dark-grey;
+    line-height: 300%;
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  hr {
+    margin: rem-calc(12) auto rem-calc(24) auto;
+  }
+
+  .off-canvas-menu-contact {
+    line-height: 300%;
+    color: $dark-blue;
+
+    img {margin-right: rem-calc(12);}
+  }
+}
+
+.help-callout {
+  background: $dark-blue;
+  z-index: 0;
+
+  p {
+    margin: 4px auto;
+    font-size: rem-calc(11);
+    color: $white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+.navigation-mobile {
+  position: relative;
+  height: rem-calc(60);
+  position: relative;
+  box-shadow: 0px 6px 10px rgba(36, 36, 36, 0.28);
+
+  .off-canvas-button {
+    margin: rem-calc(14);
+    float: left;
+    padding: rem-calc(6);
+    width: rem-calc(28);
+    height: rem-calc(32);
+    background: url('../img/navigation-icon.svg') no-repeat;
+    background-size: cover;
+  }
+
+  .excel-logo {
+    position: absolute;
+    right: 0px;
+    top: 16px;
+    background: url('../img/excel-logo-new-mobile.png') no-repeat;
+    background-size: contain;
+    width: rem-calc(108);
+    height: rem-calc(30);
+  }
+}

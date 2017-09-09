@@ -1,0 +1,123 @@
+.herounit {
+  background: url('../img/hero-small.png') no-repeat;
+  background-position: center bottom;
+  min-height: rem-calc(650);
+  width: 100%;
+
+  @include breakpoint(medium up) {
+    background: url('../img/hero-medium.png') no-repeat;
+    // background-size: cover;
+    background-position: center bottom;
+    min-height: rem-calc(650);
+    width: 100%;
+  }
+
+  @include breakpoint(large up) {
+    background: url('../img/hero-large.png') no-repeat;
+    background-size: cover;
+    background-position: center top;
+    min-height: rem-calc(575);
+    width: 100%;
+  }
+
+  h1 {
+    padding-top: rem-calc(36);
+    font-size: rem-calc(28);
+    text-align: center;
+    color: $black;
+
+    @include breakpoint(medium) {
+      padding-top: rem-calc(160);
+      font-size: rem-calc(26);
+    }
+
+    @include breakpoint(large up) {
+      padding-top: rem-calc(175);
+      font-size: rem-calc(36);
+      text-align: left;
+    }
+  }
+
+  .hero-buttons {
+    text-align: center;
+
+    @include breakpoint(large up) {
+      text-align: left;
+    }
+
+    a {
+      font-size: rem-calc(16);
+    }
+  }
+
+  p {
+    text-align: center;
+    margin: rem-calc(18 0 45 0);
+    font-size: rem-calc(17);
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(20);
+    }
+
+    @include breakpoint(large up) {
+      text-align: left;
+    }
+  }
+
+  .herounit-text {
+    display: block;
+    margin: auto 0;
+  }
+}
+
+.hero-short {
+  background-size: cover;
+  background-position: top center;
+  min-height: rem-calc(250);
+  width: 100%;
+  padding-top: rem-calc(50);
+
+  &.interpreting {
+    background: url('../img/interpreting-hero.png') no-repeat;
+    background-position: 0px 64px;
+    background-size: cover;
+  }
+
+  &.translation {
+    background: url('../img/translation-hero.png') no-repeat;
+    background-position: 0px -36px;
+    background-size: cover;
+  }
+
+  &.telephonic {
+    background: url('../img/translation-hero.png') no-repeat;
+    background-position: 0px 64px;
+    background-size: cover;
+  }
+
+  &.quote {
+    background: url('../img/quote-hero.png') no-repeat;
+    background-position: 0px 64px;
+    background-size: cover;
+  }
+
+  &.about {
+    background: lightgray;
+  }
+
+  &.linguist {
+    background: url('../img/linguist-hero.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.placeholder {
+  background: lightgray;
+  min-height: 300px;
+  margin: auto auto 50px auto;
+
+  &.no-margin {
+    margin: 0;
+  }
+}

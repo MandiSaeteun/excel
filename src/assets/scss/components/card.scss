@@ -1,0 +1,209 @@
+.card {
+  font-family: 'Georgia', sans-serif;
+  background: $white;
+  padding: rem-calc(35);
+  position: relative;
+  border-radius: 0;
+  box-shadow: 0px 0px 20px #ededed;
+  border: 1px solid transparent;
+
+  &.collapse {
+    padding: rem-calc(0);
+  }
+
+  &.service {
+    display: block;
+
+    h3 { color: $black;}
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 40px #DDD;
+
+      .services-image {
+        transform: scale(1.03);
+      }
+    }
+  }
+
+  p {
+    color: $dark-grey;
+  }
+
+  ul {
+    margin-left: 0;
+  }
+
+  li {
+    font-family: Georgia, sans-serif;
+    line-height: 225%;
+    list-style-type: none;
+    color: $dark-grey;
+  }
+
+  .button {
+    margin-bottom: 0;
+    margin-top: rem-calc(16);
+  }
+
+  h3 {
+    margin-bottom: rem-calc(16);
+  }
+
+  &.grey {
+    background: #F7F7FA;
+    border: 1px solid #f0f0f9;
+
+    @include breakpoint(large up) {
+      padding-left: rem-calc(56);
+    }
+  }
+
+  .card-icon {
+    margin-bottom: rem-calc(24);
+    max-width: rem-calc(100);
+    max-height: auto;
+  }
+
+  &.language-list {
+    background: #F7F7FB;
+    border: 1px solid #efeff9;
+    padding: rem-calc(60 70);
+  }
+
+  .horizontal-card {
+    padding: rem-calc(25);
+  }
+
+  &.koy-quote {
+    background: #F7F7FB;
+    border: 1px solid #efeff9;
+  }
+
+  &.vertical {
+    padding-top: rem-calc(230);
+
+    .services-image {
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: rem-calc(200);
+      width: 100%;
+      background-size: cover !important;
+      background-position: center center;
+
+      &.interpreting {
+        background: url('../img/services-interpreting-2.png') no-repeat;
+      }
+
+      &.translation {
+        background: url('../img/services-translation-3.jpg') no-repeat;
+      }
+
+      &.telephonic {
+        background: url('../img/services-telephonic-2.png') no-repeat;
+      }
+
+      &.medical {
+        background: url('../img/interpreting-medical.jpg') no-repeat;
+      }
+
+      &.legal {
+        background: url('../img/interpreting-legal.jpg') no-repeat;
+      }
+
+      &.socialservices {
+        background: url('../img/interpreting-socialservices.jpg') no-repeat;
+      }
+
+      &.education {
+        background: url('../img/interpreting-education.jpg') no-repeat;
+      }
+    }
+
+    .location-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url('../img/location-map.png') no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: rem-calc(250);
+      width: 100%;
+    }
+  }
+}
+
+.card-primary-image {
+
+  &.linguist-resume {
+    background: url('../img/interpreter-translator-resume.png') no-repeat;
+    background-size: cover;
+    background-position: right center;
+    min-height: rem-calc(200);
+    width: 100%
+  }
+
+  &.linguist-school {
+    background: url('../img/linguists-education.jpg') no-repeat;
+    background-size: cover;
+    background-position: right center;
+    min-height: rem-calc(200);
+    width: 100%
+  }
+
+  &.values-1 {
+    background: url('../img/about-1.png') no-repeat;
+    background-size: cover;
+    background-position: left center;
+    min-height: rem-calc(200);
+    width: 100%
+  }
+
+  &.values-2 {
+    background: url('../img/values-2.png') no-repeat;
+    background-size: cover;
+    background-position: left top;
+    min-height: rem-calc(200);
+    width: 100%
+  }
+
+  &.values-3 {
+    background: url('../img/laurie-desk-1.png') no-repeat;
+    background-size: cover;
+    background-position: left center;
+    min-height: rem-calc(200);
+    width: 100%
+  }
+
+  &.translation-quote {
+    background: url('../img/translation-prices.jpg') no-repeat;
+    background-size: cover;
+    background-position: right center;
+    min-height: rem-calc(200);
+    width: 100%
+  }
+}
+
+.full-card .columns:first-child {
+  @include breakpoint(medium up) {
+    margin-right: rem-calc(-20);
+  }
+}
+
+.full-card .columns .card:last-child {
+  @include breakpoint(medium up) {
+    // margin-right: rem-calc(20);
+    margin-right: rem-calc(-20);
+
+    h2, p {
+      padding-left: rem-calc(20);
+    }
+
+    a {
+      margin-left: rem-calc(20);
+    }
+  }
+}

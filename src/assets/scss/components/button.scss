@@ -1,0 +1,81 @@
+.button {
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  &.pink {
+    background-color: $pink;
+
+    &:hover {
+      background: darken($pink, 10%)
+    }
+  }
+
+  &.hollow-pink {
+    background-color: transparent;
+    border: 1px solid $pink;
+    color: $pink;
+
+    &:hover {
+      background-color: $pink;
+      border: 1px solid $pink;
+      color: $white;
+    }
+  }
+
+  &.light-blue {
+    background-color: $light-blue;
+
+    &:hover {
+      background: darken($light-blue, 10%)
+    }
+  }
+
+  &.hollow-light-blue {
+    background-color: transparent;
+    border: 1px solid $light-blue;
+    color: $light-blue;
+
+    &:hover {
+      background-color: $light-blue;
+      border: 1px solid $light-blue;
+      color: $white;
+    }
+  }
+
+  &.dark-blue {
+    background-color: $dark-blue;
+
+    &:hover {
+      background: darken($dark-blue, 10%)
+    }
+  }
+
+  &.hollow-dark-blue {
+    background-color: transparent;
+    border: 1px solid $dark-blue;
+    color: $dark-blue;
+
+    &:hover {
+      background-color: $dark-blue;
+      border: 1px solid $dark-blue;
+      color: $white;
+    }
+  }
+}
+
+.contactus-footer {
+  .button .pink {
+    background-color: $pink;
+    border: 1px solid $pink;
+
+    &:hover {
+      background-color: $white;
+      color: $pink;
+    }
+  }
+}
+
+.button + .button {
+  margin-left: rem-calc(18);
+}

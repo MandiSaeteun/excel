@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1500px" height="234px" viewBox="0 0 1500 234" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1500 234 0 234 1500 0"></polygon>
+    </defs>
+    <g id="Visual-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rectangle-Copy-25" transform="translate(750.000000, 117.000000) scale(-1, 1) translate(-750.000000, -117.000000) ">
+            <use fill-opacity="0.1" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            <path stroke="#EBEBEB" stroke-width="1" d="M1499.5,233.5 L1499.5,0.584047429 L6.44902198,233.5 L1499.5,233.5 Z"></path>
+        </g>
+        <g id="Artboard-4"></g>
+    </g>
+</svg>
