@@ -27,9 +27,11 @@
     background: #F7F7FA;
     border-top: 0px solid transparent;
 
-    p {
+    p, li {
       font-size: rem-calc(18);
-      line-height: 1.75;
+      line-height: 1.5;
+      font-family: 'Georgia', sans-serif;
+      color: $dark-grey;
     }
   }
 }
