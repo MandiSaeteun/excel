@@ -30,6 +30,7 @@
     @include breakpoint(medium) {
       padding-top: rem-calc(160);
       font-size: rem-calc(26);
+      text-align: left;
     }
 
     @include breakpoint(large up) {
@@ -42,7 +43,7 @@
   .hero-buttons {
     text-align: center;
 
-    @include breakpoint(large up) {
+    @include breakpoint(medium up) {
       text-align: left;
     }
 
@@ -58,6 +59,7 @@
 
     @include breakpoint(medium) {
       font-size: rem-calc(20);
+      text-align: left;
     }
 
     @include breakpoint(large up) {

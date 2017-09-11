@@ -77,5 +77,7 @@
 }
 
 .button + .button {
-  margin-left: rem-calc(18);
+  @include breakpoint(medium up) {
+    margin-left: rem-calc(18);
+  }
 }
