@@ -26,6 +26,10 @@ section {
   }
 }
 
+a:active, a:visited, a:focus {
+  text-decoration: none;
+}
+
 h1 {
   letter-spacing: rem-calc(.75);
   color: $black;
