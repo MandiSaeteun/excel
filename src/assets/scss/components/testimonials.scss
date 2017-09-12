@@ -97,16 +97,13 @@
     }
   }
 
-  img {
-    opacity: .85;
-    width: auto;
-    max-height: rem-calc(32);
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-
-    @include breakpoint(medium up) {
-      max-height: rem-calc(36);
-    }
+  .logo-bar-customers {
+    display: inline-block;
+    background: url('../img/logo-bar.png') no-repeat;
+    background-size: cover;
+    height: rem-calc(25);
+    width: rem-calc(1200);
+    background-position: center center;
+    margin: rem-calc(12 0 6 0);
   }
 }
