@@ -122,7 +122,14 @@
   border-color: $dark-grey transparent transparent;
 }
 
+//Mobile
 .off-canvas-menu {
+  display: none;
+
+  @include breakpoint(small only) {
+    display: inline;
+  }
+
   font-size: rem-calc(18);
   font-weight: 700;
 
