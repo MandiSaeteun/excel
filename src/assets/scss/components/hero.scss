@@ -6,7 +6,7 @@
   width: 100%;
 
   @include breakpoint(medium up) {
-    background: url('../img/hero-medium.png') no-repeat;
+    background: url('../img/hero-large-op.jpg') no-repeat;
     background-size: cover;
     background-position: center bottom;
     min-height: rem-calc(650);
@@ -14,7 +14,7 @@
   }
 
   @include breakpoint(large up) {
-    background: url('../img/hero-large.png') no-repeat;
+    background: url('../img/hero-large-op.jpg') no-repeat;
     background-size: cover;
     background-position: center top;
     min-height: rem-calc(575);
