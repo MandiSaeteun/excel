@@ -208,7 +208,7 @@ a:hover {
 
   img {
     box-shadow: 0px 0px 30px #ECECEC;
-    max-width: rem-calc(175);
+    max-width: rem-calc(130);
     height: auto;
 
     @include breakpoint(medium up) {
