@@ -137,7 +137,6 @@
 }
 
 .card-primary-image {
-
   &.linguist-resume {
     background: url('../img/interpreter-translator-resume.png') no-repeat;
     background-size: cover;
@@ -184,26 +183,5 @@
     background-position: right center;
     min-height: rem-calc(200);
     width: 100%
-  }
-}
-
-.full-card .columns:first-child {
-  @include breakpoint(medium up) {
-    margin-right: rem-calc(-20);
-  }
-}
-
-.full-card .columns .card:last-child {
-  @include breakpoint(medium up) {
-    // margin-right: rem-calc(20);
-    margin-right: rem-calc(-20);
-
-    h2, p {
-      padding-left: rem-calc(20);
-    }
-
-    a {
-      margin-left: rem-calc(20);
-    }
   }
 }

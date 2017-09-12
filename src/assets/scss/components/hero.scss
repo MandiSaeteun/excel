@@ -40,6 +40,12 @@
     }
   }
 
+  .button + .button {
+    @include breakpoint(medium up) {
+      margin-left: rem-calc(18);
+    }
+  }
+
   .hero-buttons {
     text-align: center;
 
@@ -70,57 +76,5 @@
   .herounit-text {
     display: block;
     margin: auto 0;
-  }
-}
-
-.hero-short {
-  background-size: cover;
-  background-position: top center;
-  min-height: rem-calc(250);
-  width: 100%;
-  padding-top: rem-calc(50);
-
-  &.interpreting {
-    background: url('../img/interpreting-hero.png') no-repeat;
-    background-position: 0px 64px;
-    background-size: cover;
-  }
-
-  &.translation {
-    background: url('../img/translation-hero.png') no-repeat;
-    background-position: 0px -36px;
-    background-size: cover;
-  }
-
-  &.telephonic {
-    background: url('../img/translation-hero.png') no-repeat;
-    background-position: 0px 64px;
-    background-size: cover;
-  }
-
-  &.quote {
-    background: url('../img/quote-hero.png') no-repeat;
-    background-position: 0px 64px;
-    background-size: cover;
-  }
-
-  &.about {
-    background: lightgray;
-  }
-
-  &.linguist {
-    background: url('../img/linguist-hero.png') no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-}
-
-.placeholder {
-  background: lightgray;
-  min-height: 300px;
-  margin: auto auto 50px auto;
-
-  &.no-margin {
-    margin: 0;
   }
 }

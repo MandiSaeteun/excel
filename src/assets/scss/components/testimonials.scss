@@ -1,5 +1,4 @@
 .card.testimonial {
-
   p {
     text-align: left;
     font-size: rem-calc(20);
@@ -33,11 +32,6 @@
   }
 }
 
-.email-us {
-  letter-spacing: 1px;
-  font-weight: 600;
-}
-
 .client-logos {
   margin-top: rem-calc(45);
   margin-bottom: rem-calc(80);
@@ -65,45 +59,13 @@
   }
 }
 
-.logos-bar {
-  text-align: center;
-  background: #35353B;
-
-  ul {
-    margin: rem-calc(10 0 6 0);
-    padding: rem-calc(0);
-  }
-
-  li {
+.testimonial {
+  .sub-header {
+    margin-bottom: rem-calc(48);
     text-align: center;
-    list-style-type: none;
-    display: inline-block;
-    margin: rem-calc(0 3);
-    &:first-child {margin-left: 0;}
-    &:last-of-type {margin-right: 0;}
-
-    @include breakpoint(medium) {
-      margin: rem-calc(0 4);
-    }
-
-    @include breakpoint(large up) {
-      margin: rem-calc(0 32);
-    }
   }
 
-  .small-screen {
-    @include breakpoint(small only) {
-      display: none;
-    }
-  }
-
-  .logo-bar-customers {
-    display: inline-block;
-    background: url('../img/logo-bar.png') no-repeat;
-    background-size: cover;
-    height: rem-calc(25);
-    width: rem-calc(1200);
-    background-position: center center;
-    margin: rem-calc(12 0 6 0);
+  .button {
+    margin-bottom: rem-calc(100);
   }
 }

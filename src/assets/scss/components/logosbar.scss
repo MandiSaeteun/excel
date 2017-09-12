@@ -1,0 +1,42 @@
+.logos-bar {
+  text-align: center;
+  background: #35353B;
+
+  ul {
+    margin: rem-calc(10 0 6 0);
+    padding: rem-calc(0);
+  }
+
+  li {
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    margin: rem-calc(0 3);
+    &:first-child {margin-left: 0;}
+    &:last-of-type {margin-right: 0;}
+
+    @include breakpoint(medium) {
+      margin: rem-calc(0 4);
+    }
+
+    @include breakpoint(large up) {
+      margin: rem-calc(0 32);
+    }
+  }
+
+  .small-screen {
+    @include breakpoint(small only) {
+      display: none;
+    }
+  }
+
+  .logo-bar-customers {
+    display: inline-block;
+    background: url('../img/logo-bar.png') no-repeat;
+    background-size: cover;
+    height: rem-calc(25);
+    width: rem-calc(1200);
+    background-position: center center;
+    margin: rem-calc(12 0 6 0);
+  }
+}

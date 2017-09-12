@@ -3,6 +3,7 @@
   font-weight: 600;
   font-family: 'Source Sans Pro', sans-serif;
 
+  //Pink button
   &.pink {
     background-color: $pink;
 
@@ -23,6 +24,7 @@
     }
   }
 
+  //Light-blue button
   &.light-blue {
     background-color: $light-blue;
 
@@ -43,6 +45,7 @@
     }
   }
 
+  //Dark-blue button
   &.dark-blue {
     background-color: $dark-blue;
 
@@ -61,23 +64,5 @@
       border: 1px solid $dark-blue;
       color: $white;
     }
-  }
-}
-
-.contactus-footer {
-  .button .pink {
-    background-color: $pink;
-    border: 1px solid $pink;
-
-    &:hover {
-      background-color: $white;
-      color: $pink;
-    }
-  }
-}
-
-.button + .button {
-  @include breakpoint(medium up) {
-    margin-left: rem-calc(18);
   }
 }

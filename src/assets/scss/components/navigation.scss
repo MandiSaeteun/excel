@@ -14,29 +14,26 @@
   }
 
   .navigation-service-types {
-    padding: rem-calc(0 3);
-    margin-left: 0;
+    padding: rem-calc(6 0);
 
     li {
-      margin: rem-calc(3) auto;
       text-align: center;
-      padding: rem-calc(3);
 
-      &:hover {
-        background: $dark-blue;
-        -webkit-transition: .15s ease-in-out;
-        -moz-transition: .15s ease-in-out;
-        -ms-transition: .15s ease-in-out;
-        -o-transition: .15s ease-in-out;
-        transition: .15s ease-in-out;
+      a {
+        margin: rem-calc(0);
+        padding: rem-calc(3 6);
+        display: inline-block;
 
-        a {color: $white;}
+        &:hover {
+          color: $white;
+          background: $dark-blue;
+          -webkit-transition: .15s ease-in-out;
+          -moz-transition: .15s ease-in-out;
+          -ms-transition: .15s ease-in-out;
+          -o-transition: .15s ease-in-out;
+          transition: .15s ease-in-out;
+        }
       }
-
-      a:hover {
-        color: $white;
-      }
-
     }
   }
 

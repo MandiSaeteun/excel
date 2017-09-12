@@ -1,5 +1,6 @@
-// Footer
 footer {
+  text-align: center;
+  border: 1px solid #E4E4E4;
 
   @include breakpoint(medium up) {
     .border-right {
@@ -117,7 +118,8 @@ footer {
   }
 }
 
-.contactus-footer {
+// Call to Action
+.contactus-cta {
   background: url('../img/contact-us-cta.jpg') no-repeat;
   background-size: cover;
   background-position: center top;
@@ -126,5 +128,13 @@ footer {
 
   @include breakpoint(medium up) {
     max-height: rem-calc(500);
+  }
+
+  .contactus-cta-details {
+    text-align: center;
+
+    @include breakpoint(medium up) {
+      text-align: left;
+    }
   }
 }

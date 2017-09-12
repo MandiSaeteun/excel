@@ -1,13 +1,3 @@
-.no-space {
-  padding-top: rem-calc(50);
-  padding-bottom: rem-calc(50);
-
-  @include breakpoint(medium up) {
-    padding-top: rem-calc(100) !important;
-    padding-bottom: rem-calc(100) !important;
-  }
-}
-
 section {
   padding-top: rem-calc(50);
   padding-bottom: rem-calc(50);
@@ -25,22 +15,6 @@ section {
   &.lightblue-background {
     background: #F7F7FA;
   }
-
-  &.first {
-    padding-top: rem-calc(275);
-
-    @include breakpoint(medium) {
-      padding-top: rem-calc(200);
-    }
-
-    @include breakpoint(large up) {
-      padding-top: rem-calc(160);
-    }
-  }
-}
-
-.koy {
-  margin-bottom: rem-calc(75);
 }
 
 .inline-link {
@@ -60,10 +34,6 @@ h1 {
   font-weight: 600;
 }
 
-.no-subheader {
-  margin-bottom: rem-calc(50);
-}
-
 h2 {
   letter-spacing: rem-calc(.75);
   font-weight: 600;
@@ -81,14 +51,14 @@ h4 {
   font-size: rem-calc(18);
 }
 
-strong {
-  letter-spacing: 0.5px;
-}
-
 p {
   font-size: rem-calc(18);
   color: $dark-grey;
   font-family: 'Georgia', sans-serif;
+}
+
+.no-subheader {
+  margin-bottom: rem-calc(50);
 }
 
 .sub-header {
@@ -103,10 +73,6 @@ p {
     font-size: rem-calc(22);
   }
 
-  &.contact-us {
-    line-height: 2;
-  }
-
   &.textleft {
     text-align: left;
   }
@@ -114,12 +80,6 @@ p {
   &.nobottom-space {
     margin-bottom: 0;
   }
-}
-
-.koy-quote {
-  font-style: italic;
-  font-size: rem-calc(18);
-  line-height: rem-calc(33);
 }
 
 .linguist-schools {
@@ -191,11 +151,6 @@ a:hover {
   text-decoration: none;
 }
 
-footer {
-  text-align: center;
-  border: 1px solid #E4E4E4;
-}
-
 .banner {
   padding: rem-calc(30 0);
   background: #3872bd;
@@ -232,7 +187,6 @@ footer {
 }
 
 .team-photos {
-
   h1 {
     margin-bottom: rem-calc(75);
   }
@@ -259,66 +213,6 @@ footer {
   }
 }
 
-.questions {
-  padding: rem-calc(12);
-  color: #FFFFFF;
-  font-size: rem-calc(18);
-  font-weight: 500;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0f4482+0,2989d8+50,1f8ceb+100 */
-  background: #0f4482; /* Old browsers */
-  background: -moz-linear-gradient(45deg,  #0f4482 0%, #2989d8 50%, #1f8ceb 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg,  #0f4482 0%,#2989d8 50%,#1f8ceb 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg,  #0f4482 0%,#2989d8 50%,#1f8ceb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f4482', endColorstr='#1f8ceb',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-  .questions-help {
-    @include breakpoint(medium up) {
-      display: inline-block;
-      margin-left: rem-calc(18);
-    }
-
-    p {
-      text-align: center;
-      letter-spacing: .5px;
-      font-size: rem-calc(16);
-      color: #FFFFFF;
-      font-weight: 700;
-      margin-bottom: 0;
-
-      @include breakpoint(medium up) {
-        text-align: left;
-        display: inline-block;
-      }
-    }
-  }
-
-  .questions-contact {
-    @include breakpoint(medium up) {
-      display: inline-block;
-      margin-top: rem-calc(3);
-      float: right;
-      margin-right: rem-calc(18);
-    }
-
-    span {
-      display: block;
-      margin: 0 auto;
-      text-align: center;
-      font-size: rem-calc(16);
-
-      @include breakpoint(medium up) {
-        display: inline-block;
-        float: right;
-        padding-left: rem-calc(24);
-      }
-    }
-  }
-}
-
-.interpreting-services-industries {
-  background-color: #ECF2F8;
-}
-
 .languages-callout {
   text-align: center;
 
@@ -341,24 +235,6 @@ footer {
 
   .button {
     margin-top: rem-calc(30);
-  }
-}
-
-.pullout-quote {
-  color: $light-blue;
-  font-size: rem-calc(22);
-  margin-bottom: rem-calc(50);
-  position: relative;
-  padding-left: rem-calc(50);
-
-  &:before {
-    content: '';
-    background-image: url('../img/quote-lightblue.svg');
-    background-size: 32px 24px;
-    width: rem-calc(36);
-    height: rem-calc(24);
-    position: absolute;
-    left: rem-calc(16);
   }
 }
 
@@ -390,30 +266,7 @@ footer {
   }
 }
 
-.contactus-footer {
-  .contactus-footer-details {
-    text-align: center;
-
-    @include breakpoint(medium up) {
-      text-align: left;
-    }
-  }
-
-  .gray-border {
-    border-left: 1px solid transparent;
-    padding: auto;
-    margin: auto;
-
-    @include breakpoint(medium up) {
-      border-left: 1px solid #e1e1e1;
-      padding-left: 70px;
-      margin-left: 50px;
-    }
-  }
-}
-
 .icon-left-large {
-
   img {
     width: rem-calc(50);
     height: rem-calc(50);
@@ -501,42 +354,7 @@ hr {
   }
 }
 
-.image-grid {
-  margin-bottom: rem-calc(24);
-
-  @include breakpoint(medium) {
-    margin-bottom: rem-calc(75);
-  }
-
-  img {
-    box-shadow: 0px 0px 30px #ECECEC;
-    margin-bottom: rem-calc(20);
-  }
-
-  @include breakpoint(medium up) {
-    img {
-      margin-bottom: rem-calc(0);
-    }
-  }
-
-  .image-grid-two img:first-child {
-    margin-bottom: rem-calc(20);
-  }
-}
-
-.testimonial {
-  .sub-header {
-    margin-bottom: rem-calc(48);
-    text-align: center;
-  }
-
-  .button {
-    margin-bottom: rem-calc(100);
-  }
-}
-
 .resources {
-
   h2 {
     font-weight: 700;
     font-size: rem-calc(22);
@@ -547,7 +365,6 @@ hr {
       font-size: rem-calc(24);
     }
   }
-
 
   li {
     margin-bottom: rem-calc(42);
@@ -585,35 +402,7 @@ hr {
 
   .steps-path {
     position: absolute;
-    // left: rem-calc(36);
-    // top: rem-calc(36);
   }
-}
-
-// .steps-image:after {
-//   content: '';
-//   border: 1px solid red;
-//   display: block;
-//   background-image: url('../img/step-path.png');
-//   position: absolute;
-//   width: rem-calc(36);
-//   height: rem-calc(24);
-// }
-
-.bottom-space {
-  margin-bottom: rem-calc(40);
-}
-
-.bottom-space-large {
-  padding-bottom: rem-calc(240);
-}
-
-.top-space {
-  padding-top: rem-calc(180);
-}
-
-.top-space-large {
-  padding-top: rem-calc(240);
 }
 
 .checkmark {
