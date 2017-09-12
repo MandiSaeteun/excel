@@ -123,12 +123,6 @@
 
 //Mobile
 .off-canvas-menu {
-  display: none;
-
-  @include breakpoint(small only) {
-    display: inline;
-  }
-
   font-size: rem-calc(18);
   font-weight: 700;
 
@@ -204,6 +198,14 @@
     background-size: contain;
     width: rem-calc(108);
     height: rem-calc(30);
+  }
+}
+
+.off-canvas {
+  display: none;
+
+  @include breakpoint(small only) {
+    display: inline;
   }
 }
 
