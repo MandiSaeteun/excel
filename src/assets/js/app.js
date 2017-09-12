@@ -4,13 +4,14 @@ $(document).ready(function() {
   $("#myTags").tagit();
 });
 
-//Make URL active
+//MAKE URL ACTIVE
 $(function() {
   if ((location.pathname.split("/")[1]) !== ""){
     $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
   }
 });
 
+//SCROLL TO ANCHOR
 // Select all links with hashes
 $('a[href*="#"]')
 // Remove links that don't actually link to anything
@@ -32,7 +33,7 @@ $('a[href*="#"]')
       event.preventDefault();
       $('html, body').animate({
         scrollTop: target.offset().top
-      }, 2000, function() {
+      }, 2500, function() {
         // Callback after animation
         // Must change focus!
         var $target = $(target);
@@ -47,5 +48,3 @@ $('a[href*="#"]')
     }
   }
 });
-
-new WOW().init();
