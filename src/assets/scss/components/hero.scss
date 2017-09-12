@@ -4,6 +4,7 @@
   background-size: cover;
   min-height: rem-calc(650);
   width: 100%;
+  z-index: 1;
 
   @include breakpoint(medium up) {
     background: url('../img/hero-large-op.jpg') no-repeat;
@@ -22,7 +23,7 @@
   }
 
   h1 {
-    padding-top: rem-calc(36);
+    padding-top: rem-calc(130);
     font-size: rem-calc(28);
     text-align: center;
     color: $black;
