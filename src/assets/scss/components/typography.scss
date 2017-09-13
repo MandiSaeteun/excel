@@ -191,6 +191,14 @@ a:hover {
 }
 
 .team-photos {
+
+  .photo {
+    border: 1px solid red;
+    max-width: rem-calc(150);
+    margin: 0;
+    padding: 0;
+  }
+
   h1 {
     margin-bottom: rem-calc(75);
   }
@@ -212,7 +220,7 @@ a:hover {
     height: auto;
 
     @include breakpoint(medium up) {
-      max-width: rem-calc(175);
+      max-width: rem-calc(150);
     }
   }
 }
