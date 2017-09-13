@@ -23,8 +23,6 @@ footer {
     margin: rem-calc(24) auto;
 
     .excel-logo {
-      text-align: left;
-      border: 1ps solid red;
       display: block;
       margin: 0 auto rem-calc(24) auto;
 
@@ -33,6 +31,7 @@ footer {
       }
 
       @include breakpoint(medium up) {
+        float: left;
         display: inline;
         margin: 0 0 rem-calc(24) 0;
       }
