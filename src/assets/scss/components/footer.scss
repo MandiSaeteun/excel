@@ -73,7 +73,7 @@ footer {
 
       img {
         margin: rem-calc(8) rem-calc(12) rem-calc(8) rem-calc(0);
-        height: rem-calc(75);
+        height: rem-calc(65);
         width: auto;
 
         @include breakpoint(large up) {

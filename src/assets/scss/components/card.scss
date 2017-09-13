@@ -6,6 +6,11 @@
   border-radius: 0;
   box-shadow: 0px 0px 20px #ededed;
   border: 1px solid transparent;
+  text-align: center;
+
+  @include breakpoint(large up) {
+    text-align: left;
+  }
 
   &.collapse {
     padding: rem-calc(0);
@@ -53,9 +58,11 @@
   &.grey {
     background: #F7F7FA;
     border: 1px solid #f0f0f9;
+    text-align: center;
 
     @include breakpoint(large up) {
       padding-left: rem-calc(56);
+      text-align: left;
     }
   }
 
