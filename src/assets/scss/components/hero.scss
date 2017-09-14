@@ -4,7 +4,6 @@
   background-size: cover;
   min-height: rem-calc(650);
   width: 100%;
-  z-index: 1;
 
   @include breakpoint(medium up) {
     background: url('../img/hero-large-op.jpg') no-repeat;
@@ -23,8 +22,8 @@
   }
 
   h1 {
-    padding-top: rem-calc(130);
-    font-size: rem-calc(28);
+    padding-top: rem-calc(116);
+    font-size: rem-calc(24);
     text-align: center;
     color: $black;
 
@@ -55,7 +54,12 @@
     }
 
     a {
-      font-size: rem-calc(16);
+      font-size: rem-calc(14);
+      margin-right: rem-calc(8);
+
+      @include breakpoint(medium up) {
+        font-size: rem-calc(16);
+      }
     }
   }
 
@@ -63,10 +67,12 @@
     text-align: center;
     margin: rem-calc(18 0 45 0);
     font-size: rem-calc(17);
+    display: none;
 
     @include breakpoint(medium) {
       font-size: rem-calc(20);
       text-align: left;
+      display: block;
     }
 
     @include breakpoint(large up) {
