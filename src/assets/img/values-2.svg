@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
-    <title>Artboard</title>
+    <title>Artboard 5</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Visual-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard" stroke="#00B3EB" stroke-width="2">
-            <g id="noun_195785_cc" transform="translate(3.000000, 5.000000)">
-                <path d="M44,16.5311667 C44,7.36592801 34.155,0 22,0 C9.845,0 0,7.36592801 0,16.5311667 C0,25.6964053 8.745,32.5000488 20.9,32.5000488 C21.285,32.5000488 21.67,32.5000488 22.055,32.5000488 L32.89,40.9343175 C33.275,41.1592313 33.715,40.7656321 33.55,40.3720329 L29.645,31.7690788 C38.61,29.6323974 44,23.9533231 44,16.5311667 Z" id="Shape"></path>
+        <g id="Artboard-5" stroke="#00B3EB" stroke-width="2">
+            <g id="noun_195785_cc" transform="translate(2.000000, 5.000000)">
+                <path d="M45,16.5311667 C45,7.36592801 34.93125,0 22.5,0 C10.06875,0 0,7.36592801 0,16.5311667 C0,25.6964053 8.94375,32.5000488 21.375,32.5000488 C21.76875,32.5000488 22.1625,32.5000488 22.55625,32.5000488 L33.6375,40.9343175 C34.03125,41.1592313 34.48125,40.7656321 34.3125,40.3720329 L30.31875,31.7690788 C39.4875,29.6323974 45,23.9533231 45,16.5311667 Z" id="Shape"></path>
+            </g>
+            <g id="Group" transform="translate(13.000000, 20.000000)">
+                <circle id="Oval" cx="2" cy="2" r="2"></circle>
+                <circle id="Oval-Copy" cx="12" cy="2" r="2"></circle>
+                <circle id="Oval-Copy-2" cx="22" cy="2" r="2"></circle>
             </g>
         </g>
     </g>

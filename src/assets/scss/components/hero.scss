@@ -2,7 +2,7 @@
   background: url('../img/hero-small.png') no-repeat;
   background-position: center bottom;
   background-size: cover;
-  min-height: rem-calc(650);
+  min-height: rem-calc(600);
   width: 100%;
 
   @include breakpoint(medium up) {

@@ -220,7 +220,7 @@ a:hover {
     height: auto;
 
     @include breakpoint(medium up) {
-      max-width: rem-calc(150);
+      max-width: rem-calc(175);
     }
   }
 }
@@ -251,11 +251,21 @@ a:hover {
 }
 
 .located {
-  h1, p {
+  p {
     text-align: left;
 
     @include breakpoint(medium up) {
       margin-right: rem-calc(56);
+      text-align: left;
+    }
+  }
+
+  h1 {
+    text-align: center;
+
+    @include breakpoint(medium up) {
+      margin-right: rem-calc(56);
+      text-align: left;
     }
   }
 
