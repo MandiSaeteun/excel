@@ -1,7 +1,11 @@
 .card.testimonial {
   p {
     text-align: left;
-    font-size: rem-calc(20);
+    font-size: rem-calc(16);
+
+    @include breakpoint(medium) {
+      font-size: rem-calc(20);
+    }
   }
 
   .testimonial-info {
@@ -21,6 +25,11 @@
       margin-left: rem-calc(115);
       padding-top: rem-calc(0);
       text-align: left;
+      font-size: rem-calc(14);
+
+      @include breakpoint(medium) {
+        font-size: rem-calc(16);
+      }
     }
 
     span {
@@ -28,7 +37,7 @@
       font-family: 'Source Sans Pro', sans-serif;
       font-weight: 900;
       letter-spacing: .75px;
-      font-size: rem-calc(20);
+      font-size: rem-calc(18);
     }
   }
 }
@@ -65,8 +74,6 @@
     margin-bottom: rem-calc(48);
     text-align: center;
   }
-
-
 
   .button {
     margin-bottom: rem-calc(100);
