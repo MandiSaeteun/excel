@@ -80,6 +80,11 @@
 
   .horizontal-card {
     padding: rem-calc(25);
+    text-align: center;
+
+    @include breakpoint(medium) {
+      text-align: left;
+    }
   }
 
   &.koy-quote {

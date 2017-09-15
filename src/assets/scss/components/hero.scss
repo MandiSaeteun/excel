@@ -5,11 +5,11 @@
   min-height: rem-calc(600);
   width: 100%;
 
-  @include breakpoint(medium up) {
-    background: url('../img/hero-large-op.jpg') no-repeat;
+  @include breakpoint(medium) {
+    background: url('../img/hero-medium.jpg') no-repeat;
     background-size: cover;
     background-position: center bottom;
-    min-height: rem-calc(650);
+    min-height: rem-calc(550);
     width: 100%;
   }
 
