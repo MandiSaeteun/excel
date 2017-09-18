@@ -191,6 +191,10 @@ a:hover {
 .intro-image {
   margin-bottom: rem-calc(50);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+
+  @include breakpoint(medium up) {
+    margin-bottom: rem-calc(75);
+  }
 }
 
 .team-photos {
