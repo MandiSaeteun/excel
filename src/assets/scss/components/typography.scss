@@ -73,7 +73,7 @@ p {
   font-size: rem-calc(18);
   color: $dark-grey;
   text-align: center;
-  margin-bottom: rem-calc(75);
+  margin-bottom: rem-calc(50);
   font-family: 'Georgia', sans-serif;
 
   @include breakpoint(medium) {
@@ -190,7 +190,7 @@ a:hover {
 
 .intro-image {
   margin-bottom: rem-calc(50);
-  box-shadow: 0px 0px 20px #DDD;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
 
 .team-photos {

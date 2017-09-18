@@ -50,7 +50,7 @@ footer {
     }
 
     a {
-      font-size: rem-calc(16);
+      font-size: rem-calc(18);
       font-weight: 600;
       color: $dark-grey;
 
@@ -137,5 +137,11 @@ footer {
     @include breakpoint(medium up) {
       text-align: left;
     }
+  }
+}
+
+.footer-links {
+  @include breakpoint(small only) {
+    margin-bottom: rem-calc(-12);
   }
 }
