@@ -57,15 +57,10 @@
   <div class="row align-center">
     <div class="small-11 medium-9 columns">
       <div class="card request-quote-form">
-        <h3>In-Person Interpreting Project Details</h3>
+        <h3>Project Details (Interpreting)</h3>
         <div class="row">
-          <div class="small-12 medium-6 columns">
-            <label>Date of Service
-              <input type="text" placeholder="01/12/2017">
-            </label>
-          </div>
-          <div class="small-12 medium-6 columns">
-            <label>Service Needed
+          <div class="small-12 medium-4 columns">
+            <label>Service Type<span class="required">*</span>
               <select>
                 <option value="In-Person Interpreting">In-Person Interpreting</option>
                 <option value="Document Translation">Document Translation</option>
@@ -73,34 +68,172 @@
               </select>
             </label>
           </div>
-        </div>
-        <div class="row">
-          <div class="small-12 medium-6 columns">
-            <label>Target Language
-              <input type="text" placeholder="Spanish">
+          <div class="small-12 medium-4 columns">
+            <label>Language<span class="required">*</span>
+              <div id="the-basics">
+                <input class="typeahead" type="text" placeholder="Spanish">
+              </div>
             </label>
           </div>
-          <div class="small-12 medium-6 columns">
-            <label>Service Zip Code
-              <input type="text" placeholder="95818">
+          <div class="small-12 medium-4 columns">
+            <label>Date of Service<span class="required">*</span>
+              <input type="text" placeholder="09/20/2017">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-4 columns">
+            <label>Scheduled Start Time<span class="required">*</span>
+              <input type="text" placeholder="8:30 AM">
+            </label>
+          </div>
+          <div class="small-12 medium-4 columns">
+            <label>Estimated Duration<span class="required">*</span>
+              <input type="text" placeholder="4.25 hours">
+            </label>
+          </div>
+          <div class="small-12 medium-4 columns">
+            <label>Service Zip Code<span class="required">*</span>
+              <input type="text" placeholder="95815">
             </label>
           </div>
         </div>
         <div class="row">
           <div class="small-12 columns">
             <label>
-              Service Description
-              <textarea rows="5" placeholder="Duration of service, nature of request, setting, description, etc"></textarea>
+              Service Description<span class="required">*</span>
+              <textarea rows="4" placeholder="Nature of request, setting, type of appointment, etc"></textarea>
             </label>
-            <a href="#" class="small button center-text hollow-light-blue">Attach a file</a>
-            <span>Optional</span>
+            <a href="#" class="button center-text hollow-light-blue">Attach a File</a>
+            <span>(Optional)</span>
             <!-- <span>(Highly recommended for document translation requests.)</span> -->
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <br>
-        <br>
+  <div class="row align-center">
+    <div class="small-11 medium-9 columns">
+      <div class="card request-quote-form">
+        <h3>Project Details (Translation)</h3>
+        <div class="row">
+          <div class="small-12 medium-4 columns">
+            <label>Service Type<span class="required">*</span>
+              <select>
+                <option value="In-Person Interpreting">In-Person Interpreting</option>
+                <option value="Document Translation">Document Translation</option>
+                <option value="Telephone Interpreting">Telephone Interpreting</option>
+              </select>
+            </label>
+          </div>
+          <div class="small-12 medium-4 columns">
+            <label>Language<span class="required">*</span>
+              <div id="the-basics">
+                <input class="typeahead" type="text" placeholder="Spanish">
+              </div>
+            </label>
+          </div>
+          <div class="small-12 medium-4 columns">
+            <label>Date of Service<span class="required">*</span>
+              <input type="text" placeholder="09/20/2017">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-4 columns">
+            <label>Scheduled Start Time<span class="required">*</span>
+              <input type="text" placeholder="8:30 AM">
+            </label>
+          </div>
+          <div class="small-12 medium-4 columns">
+            <label>Estimated Duration<span class="required">*</span>
+              <input type="text" placeholder="4.25 hours">
+            </label>
+          </div>
+          <div class="small-12 medium-4 columns">
+            <label>Service Zip Code<span class="required">*</span>
+              <input type="text" placeholder="95815">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 columns">
+            <label>
+              Service Description<span class="required">*</span>
+              <textarea rows="4" placeholder="Nature of request, setting, type of appointment, etc"></textarea>
+            </label>
+            <a href="#" class="button center-text hollow-light-blue">Attach a File</a>
+            <span>(Optional)</span>
+            <!-- <span>(Highly recommended for document translation requests.)</span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="row align-center">
+    <div class="small-11 medium-9 columns">
+      <div class="card request-quote-form">
+        <h3>Project Details (Telephonic)</h3>
+        <div class="row">
+          <div class="small-12 medium-4 columns">
+            <label>Service Type<span class="required">*</span>
+              <select>
+                <option value="In-Person Interpreting">In-Person Interpreting</option>
+                <option value="Document Translation">Document Translation</option>
+                <option value="Telephone Interpreting">Telephone Interpreting</option>
+              </select>
+            </label>
+          </div>
+          <div class="small-12 medium-4 columns">
+            <label>Language<span class="required">*</span>
+              <div id="the-basics">
+                <input class="typeahead" type="text" placeholder="Spanish">
+              </div>
+            </label>
+          </div>
+          <div class="small-12 medium-4 columns">
+            <label>Date of Service<span class="required">*</span>
+              <input type="text" placeholder="09/20/2017">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-4 columns">
+            <label>Scheduled Start Time<span class="required">*</span>
+              <input type="text" placeholder="8:30 AM">
+            </label>
+          </div>
+          <div class="small-12 medium-4 columns">
+            <label>Estimated Duration<span class="required">*</span>
+              <input type="text" placeholder="4.25 hours">
+            </label>
+          </div>
+          <div class="small-12 medium-4 columns">
+            <label>Service Zip Code<span class="required">*</span>
+              <input type="text" placeholder="95815">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 columns">
+            <label>
+              Service Description<span class="required">*</span>
+              <textarea rows="4" placeholder="Nature of request, setting, type of appointment, etc"></textarea>
+            </label>
+            <a href="#" class="button center-text hollow-light-blue">Attach a File</a>
+            <span>(Optional)</span>
+            <!-- <span>(Highly recommended for document translation requests.)</span> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row align-center">
+    <div class="small-11 medium-9 columns">
+      <div class="card request-quote-form">
         <div class="row">
           <div class="small-12 columns">
             <h3>Who can we speak to?</h3>
@@ -109,12 +242,12 @@
 
         <div class="row">
           <div class="small-12 medium-6 columns">
-            <label>Name
+            <label>Your Name<span class="required">*</span>
               <input type="text" placeholder="">
             </label>
           </div>
           <div class="small-12 medium-6 columns">
-            <label>Company or Organization
+            <label>Company or Organization<span class="required">*</span>
               <input type="text" placeholder="">
             </label>
           </div>
@@ -122,21 +255,24 @@
 
         <div class="row">
           <div class="small-12 medium-6 columns">
-            <label>Phone
+            <label>Phone<span class="required">*</span>
               <input type="text" placeholder="">
             </label>
           </div>
           <div class="small-12 medium-6 columns">
-            <label>E-mail
+            <label>E-mail<span class="required">*</span>
               <input type="text" placeholder="">
             </label>
           </div>
         </div>
-        <div class="row column">
-          <input id="checkbox1" type="checkbox"><label for="checkbox1">Send me a copy via email</label>
-        </div>
-        <a href="#" class="button center-text pink">Submit Request</a>
       </div>
+    </div>
+  </div>
+
+  <div class="row align-center text-center">
+    <div class="small-11 medium-9 columns">
+      <div><input id="checkbox1" type="checkbox" checked><label for="checkbox1">Send me a copy via email</label></div>
+      <a href="#" class="button center-text dark-blue">Submit My Request</a>
     </div>
   </div>
 </section>
@@ -145,7 +281,7 @@
 <section>
   <div class="row align-center">
     <div class="small-11 medium-8 medium-centered columns">
-      <h1 class="text-center light-blue-header">Frequently asked questions (FAQs)</h1>
+      <h1 class="text-center light-blue-header">Frequently Asked Questions</h1>
       <ul class="accordion" data-accordion>
         <li class="accordion-item is-active" data-accordion-item>
           <a href="#" class="accordion-title">1. Is the interpreter certified?</a>
@@ -212,4 +348,61 @@
   </div>
 </section>
 
+<!-- Testimonials -->
+<section class="lightblue-background">
+  <div class="row align-center">
+    <div class="small-11 columns">
+      <h1>What customers are saying about Excel</h1>
+      <div class="row align-center">
+        <div class="small-12 medium-12 columns">
+          <ul class="client-logos" data-equalizer-watch data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600" data-aos-once="true">
+            <li><img src="/assets/img/alamedacountyssa-logo.png" alt="Alameda County Social Services Logo"></li>
+            <li><img src="/assets/img/department-of-education-logo.png" alt="Sacramento Department of Education Logo"></li>
+            <li><img src="/assets/img/reichelplesser-logo.png" alt="Reichel Plesser Lawfirm Logo"></li>
+            <li><img src="/assets/img/healthnet-logo.png" alt="Healthnet Logo"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row align-center" data-equalizer data-aos="fade" data-aos-easing="ease-in" data-aos-delay="500" data-aos-duration="600" data-aos-once="true">
+    <div class="small-11 medium-6 columns">
+      <div class="card testimonial" data-equalizer-watch>
+        <p>“With particularly difficult clients the interpreters facilitate communication by working with the attorney to understand not just the words used but the cultural meaning of their communication.  I don’t think there is another translation company that can even begin to approach their competency.”</p>
+        <div class="row">
+          <div class="small-12 columns">
+            <div class="testimonial-info">
+              <img src="/assets/img/thomas-johnson.png" alt="Thomas Johnson Testimonial Headshot">
+              <div class="testimonial-name">
+                <span>Thomas Johnson</span>Federal and State Criminal Defense Attorney<br>
+                Sacramento, California
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="small-11 medium-6 columns">
+      <div class="card testimonial" data-equalizer-watch>
+        <p>"Thank you Excel Interpreting for the excellent service. You’ve been great in navigating and making a difference in language barriers."</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="small-12 columns">
+            <div class="testimonial-info">
+              <img src="/assets/img/prescott.png" alt="Prescott-Joseph Center Testimonial Logo">
+              <div class="testimonial-name"><span>Selena Urbino</span>Bilingual Family Advocate<br>Prescott-Joseph Center Inc. in Oakland, California</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{> call-to-action}}
 {{> footer}}

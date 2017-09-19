@@ -527,8 +527,19 @@ a[href^=tel] {
   padding: rem-calc(40 60);
   margin-top: 0;
 
+  .required {
+    color: $pink;
+    margin-left: rem-calc(0);
+  }
+
   h3 {
+    color: $black;
     margin-bottom: rem-calc(36);
+  }
+
+  [type='checkbox'] + label[for], [type='radio'] + label[for] {
+    font-family: 'Georgia', sans-serif !important;
+    font-size: rem-calc(14);
   }
 
   label {
@@ -536,11 +547,21 @@ a[href^=tel] {
     color: $black;
     font-weight: 700;
     letter-spacing: .5px;
-    margin-bottom: rem-calc(24);
+    margin-bottom: rem-calc(40);
     font-family: 'Source Sans Pro', sans-serif;
 
-    input:focus {
+    input:focus, select:focus, textarea:focus {
       border: 1px solid $dark-blue;
+    }
+
+    select {
+      font-family: 'Georgia', sans-serif;
+      background-color: #F7F7FA;
+      margin-bottom: rem-calc(0);
+    }
+
+    input, textarea {
+      font-family: 'Georgia', sans-serif;
     }
   }
 
@@ -554,6 +575,10 @@ a[href^=tel] {
     display: inline-block;
     margin-left: rem-calc(12);
   }
+}
+
+.request-quote-form:first-of-type {
+  margin-bottom: rem-calc(50);
 }
 
 //Temp fix for anchor problem created by fixed header
