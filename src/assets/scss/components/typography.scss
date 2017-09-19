@@ -532,11 +532,16 @@ a[href^=tel] {
   }
 
   label {
-    font-size: rem-calc(14);
-    color: $dark-grey;
-    font-weight: 600;
+    font-size: rem-calc(16);
+    color: $black;
+    font-weight: 700;
     letter-spacing: .5px;
     margin-bottom: rem-calc(24);
+    font-family: 'Source Sans Pro', sans-serif;
+
+    input:focus {
+      border: 1px solid $dark-blue;
+    }
   }
 
   .button {
