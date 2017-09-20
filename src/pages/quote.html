@@ -16,9 +16,9 @@
   <!-- Steps -->
   <div class="row align-center">
     <div class="small-11 medium-10 columns">
-      <div class="row">
+      <div class="row align-center">
         <div class="small-11 medium-10 large-4 columns">
-          <div class="card" data-aos="fade" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
+          <div class="card" data-aos="fade" data-aos-delay="400" data-aos-duration="800" data-aos-once="true">
             <img class="card-icon"  src="/assets/img/step1-icon.svg" alt="Certified Interpreters Icon">
             <h3>Provide Your Project Details</h3>
             <p>We’ll gather the important project details to ensure that we pair you with the most qualified linguist.</p>
@@ -26,7 +26,7 @@
         </div>
 
         <div class="small-11 medium-5 large-4 columns">
-          <div class="card" data-aos="fade" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true">
+          <div class="card" data-aos="fade" data-aos-delay="600" data-aos-duration="800" data-aos-once="true">
             <img class="card-icon"  src="/assets/img/step2-icon.svg" alt="Certified Interpreters Icon">
             <h3>Receive a Free Custom Quote</h3>
             <p>Using our network of over 7000 expert linguists, we’ll provide you with a free customized quote.</p>
@@ -34,7 +34,7 @@
         </div>
 
         <div class="small-11 medium-5 large-4 columns">
-          <div class="card" data-aos="fade" data-aos-ease="ease-in-sine" data-aos-delay="600" data-aos-duration="1000" data-aos-once="true">
+          <div class="card" data-aos="fade" data-aos-ease="ease-in-sine" data-aos-delay="800" data-aos-duration="800" data-aos-once="true">
             <img class="card-icon"  src="/assets/img/step3-icon.svg" alt="Certified Interpreters Icon">
             <h3>Confirm and Book Services</h3>
             <p>We’ll carefully outline the service details and secure your linguist for the duration of the project.</p>
@@ -63,8 +63,8 @@
             <label>Service Type<span class="required">*</span>
               <select>
                 <option value="In-Person Interpreting">In-Person Interpreting</option>
-                <option value="Document Translation">Document Translation</option>
-                <option value="Telephone Interpreting">Telephone Interpreting</option>
+                <!-- <option value="Document Translation">Document Translation</option>
+                <option value="Telephone Interpreting">Telephone Interpreting</option> -->
               </select>
             </label>
           </div>
@@ -106,7 +106,6 @@
             </label>
             <a href="#" class="button center-text hollow-light-blue">Attach a File</a>
             <span>(Optional)</span>
-            <!-- <span>(Highly recommended for document translation requests.)</span> -->
           </div>
         </div>
       </div>
@@ -121,51 +120,58 @@
           <div class="small-12 medium-4 columns">
             <label>Service Type<span class="required">*</span>
               <select>
-                <option value="In-Person Interpreting">In-Person Interpreting</option>
+                <!-- <option value="In-Person Interpreting">In-Person Interpreting</option> -->
                 <option value="Document Translation">Document Translation</option>
-                <option value="Telephone Interpreting">Telephone Interpreting</option>
+                <!-- <option value="Telephone Interpreting">Telephone Interpreting</option> -->
               </select>
             </label>
           </div>
           <div class="small-12 medium-4 columns">
-            <label>Language<span class="required">*</span>
+            <label>Target Language<span class="required">*</span>
               <div id="the-basics">
-                <input class="typeahead" type="text" placeholder="Spanish">
+                <input class="typeahead" type="text" placeholder="Russian">
               </div>
             </label>
           </div>
           <div class="small-12 medium-4 columns">
-            <label>Date of Service<span class="required">*</span>
-              <input type="text" placeholder="09/20/2017">
+            <label>Source Language<span class="required">*</span>
+              <div id="the-basics">
+                <input class="typeahead" type="text" placeholder="English">
+              </div>
             </label>
           </div>
         </div>
         <div class="row">
           <div class="small-12 medium-4 columns">
-            <label>Scheduled Start Time<span class="required">*</span>
-              <input type="text" placeholder="8:30 AM">
+            <label>Due Date<span class="required">*</span>
+              <input type="text" placeholder="10/19/2017">
             </label>
           </div>
           <div class="small-12 medium-4 columns">
-            <label>Estimated Duration<span class="required">*</span>
-              <input type="text" placeholder="4.25 hours">
+            <label>Estimated Word Count<span class="required">*</span>
+              <input type="text" placeholder="154">
             </label>
           </div>
           <div class="small-12 medium-4 columns">
-            <label>Service Zip Code<span class="required">*</span>
-              <input type="text" placeholder="95815">
+            <label>Subject Matter<span class="required">*</span>
+              <select>
+                <option value="Legal">Legal</option>
+                <option value="Healthcare">Health &amp; Medicine</option>
+                <option value="Education">Education</option>
+                <option value="Social-Services">Social Services</option>
+                <option value="Other">Other</option>
+              </select>
             </label>
           </div>
         </div>
         <div class="row">
           <div class="small-12 columns">
             <label>
-              Service Description<span class="required">*</span>
-              <textarea rows="4" placeholder="Nature of request, setting, type of appointment, etc"></textarea>
+              Document Description<span class="required">*</span>
+              <textarea rows="4" placeholder="Nature and type of document (ie. medical birth certifcate), length in pages, audience, additional services required such as notary, etc"></textarea>
             </label>
             <a href="#" class="button center-text hollow-light-blue">Attach a File</a>
-            <span>(Optional)</span>
-            <!-- <span>(Highly recommended for document translation requests.)</span> -->
+            <span>(Required)<span class="required">*</span></span>
           </div>
         </div>
       </div>
@@ -180,8 +186,8 @@
           <div class="small-12 medium-4 columns">
             <label>Service Type<span class="required">*</span>
               <select>
-                <option value="In-Person Interpreting">In-Person Interpreting</option>
-                <option value="Document Translation">Document Translation</option>
+                <!-- <option value="In-Person Interpreting">In-Person Interpreting</option>
+                <option value="Document Translation">Document Translation</option> -->
                 <option value="Telephone Interpreting">Telephone Interpreting</option>
               </select>
             </label>
@@ -211,8 +217,14 @@
             </label>
           </div>
           <div class="small-12 medium-4 columns">
-            <label>Service Zip Code<span class="required">*</span>
-              <input type="text" placeholder="95815">
+            <label>Call Type<span class="required">*</span>
+              <select>
+                <option value="Legal">Legal</option>
+                <option value="Healthcare">Health &amp; Medicine</option>
+                <option value="Education">Education</option>
+                <option value="Social-Services">Social Services</option>
+                <option value="Other">Other</option>
+              </select>
             </label>
           </div>
         </div>
@@ -220,11 +232,10 @@
           <div class="small-12 columns">
             <label>
               Service Description<span class="required">*</span>
-              <textarea rows="4" placeholder="Nature of request, setting, type of appointment, etc"></textarea>
+              <textarea rows="4" placeholder="Nature of phone call (ie. accident report), special requirements, etc"></textarea>
             </label>
             <a href="#" class="button center-text hollow-light-blue">Attach a File</a>
             <span>(Optional)</span>
-            <!-- <span>(Highly recommended for document translation requests.)</span> -->
           </div>
         </div>
       </div>
@@ -271,7 +282,9 @@
 
   <div class="row align-center text-center">
     <div class="small-11 medium-9 columns">
-      <div><input id="checkbox1" type="checkbox" checked><label for="checkbox1">Send me a copy via email</label></div>
+      <div class="quote-checkbox">
+        <input id="checkbox1" type="checkbox" checked><label for="checkbox1">Send me a copy to my e-mail</label>
+      </div>
       <a href="#" class="button center-text dark-blue">Submit My Request</a>
     </div>
   </div>
@@ -284,68 +297,70 @@
       <h1 class="text-center light-blue-header">Frequently Asked Questions</h1>
       <ul class="accordion" data-accordion>
         <li class="accordion-item is-active" data-accordion-item>
-          <a href="#" class="accordion-title">1. Is the interpreter certified?</a>
+          <a href="#" class="accordion-title">1. What mode of interpretation do you require?</a>
           <div class="accordion-content" data-tab-content>
-            <p>Interpreter certification can be critical and it can influence outcomes. If your case requires the use of a Court Certified or a Court Registered Interpreter, and you know what you are doing, you can search for someone and hire directly; on your own, from the appropriate state interpreter registry. If you choose to hire through a language service provider (LSP), make sure you ask for the interpreter’s name and cross reference the interpreter with corresponding California interpreter registries to ensure they are in fact licensed by the state (and not “certified” by a language company). The quality is not the same. Avoid compromising the integrity of your case by knowing the difference.</p>
+            <p>Simultaneous or Consecutive? The skills sets for simultaneous and consecutive are quite different, and not all interpreters have equal capabilities. While simultaneous interpreting can reduce the meeting time by half the speed, it may not be the most effective communication style for your clients. Understanding the difference can save time, money and determine how smooth the meeting will run for you and your clients.</p>
           </div>
         </li>
         <li class="accordion-item" data-accordion-item>
-          <a href="#" class="accordion-title">2. What is the cost of interpretation services?</a>
+          <a href="#" class="accordion-title">2. What is the difference between agency certified and court certified interpreters?</a>
           <div class="accordion-content" data-tab-content>
-            <p>Factors that influence interpreter fees include language, availability of certified and licensed interpreters in specific industries within specific regions of the state, duration of the job, setting, nature of the interpretation, mileage, travel time and/or lodging. Depending on the level of certification, there is usually a two hour to a half-day, industry practice, minimum requirement. Scheduling interpreter services in advance will help keep costs to a minimum.</p>
+            <p>First, there are many levels of certification in the language industry. While contracting with an LSP can make things easier, the caveat is being able to hire a certified interpreter who is in fact licensed by notable industry testing entities, as opposed to hiring an “agency certified” interpreter. The difference here is not just pricing; often it’s quality. Agency certified interpreters are interpreters whose skills have been assessed by the language agency they work for. For medical and for school or non-court related assignments, agency certifications are usually acceptable. However, for court and legal related matters, working with court certified interpreters is usually not optional but mandatory. To avoid compromising the integrity of the case, it is recommended that you utilize services of a certified or court interpreter.</p>
           </div>
         </li>
         <li class="accordion-item" data-accordion-item>
-          <a href="#" class="accordion-title">3. What industries do you cover?</a>
+          <a href="#" class="accordion-title">3. How do I know need a certified foreign language interpreter?</a>
           <div class="accordion-content" data-tab-content>
-            <p>Our document translators are capable of general as well as industry-specific translations. Our extensive network of technical translators encompass specialty fields including legal, healthcare, education, social services, business and website localization.</p>
+            <p>Currently, the law requires the use of licensed interpreters for most legal and medical interpreting assignments. While hiring a certified interpreter is ideal in every situation; it is not always practical. It may be cost prohibitive or there may not be an interpreter available altogether. Choosing the appropriate level of certification will depend on the individual job or the requesting party. If you are not sure what you are doing, working with a respected; transparent language service provider (LSP) can make a huge difference. A skilled LSP will ask the right questions and guide you and your clients to successful outcomes.</p>
           </div>
         </li>
         <li class="accordion-item" data-accordion-item>
-          <a href="#" class="accordion-title">4. What industries do you cover?</a>
+          <a href="#" class="accordion-title">4. How do I know the interpreter I am getting is certified?</a>
           <div class="accordion-content" data-tab-content>
-            <p>Our document translators are capable of general as well as industry-specific translations. Our extensive network of technical translators encompass specialty fields including legal, healthcare, education, social services, business and website localization.</p>
-          </div>
-        </li>
-        <li class="accordion-item" data-accordion-item>
-          <a href="#" class="accordion-title">5. What industries do you cover?</a>
-          <div class="accordion-content" data-tab-content>
-            <p>Our document translators are capable of general as well as industry-specific translations. Our extensive network of technical translators encompass specialty fields including legal, healthcare, education, social services, business and website localization.</p>
-          </div>
-        </li>
-        <li class="accordion-item" data-accordion-item>
-          <a href="#" class="accordion-title">6. What industries do you cover?</a>
-          <div class="accordion-content" data-tab-content>
-            <p>Our document translators are capable of general as well as industry-specific translations. Our extensive network of technical translators encompass specialty fields including legal, healthcare, education, social services, business and website localization.</p>
-          </div>
-        </li>
-        <li class="accordion-item" data-accordion-item>
-          <a href="#" class="accordion-title">7. What industries do you cover?</a>
-          <div class="accordion-content" data-tab-content>
-            <p>Our document translators are capable of general as well as industry-specific translations. Our extensive network of technical translators encompass specialty fields including legal, healthcare, education, social services, business and website localization.</p>
-          </div>
-        </li>
-        <li class="accordion-item" data-accordion-item>
-          <a href="#" class="accordion-title">8. What industries do you cover?</a>
-          <div class="accordion-content" data-tab-content>
-            <p>Our document translators are capable of general as well as industry-specific translations. Our extensive network of technical translators encompass specialty fields including legal, healthcare, education, social services, business and website localization.</p>
-          </div>
-        </li>
-        <li class="accordion-item" data-accordion-item>
-          <a href="#" class="accordion-title">9. What industries do you cover?</a>
-          <div class="accordion-content" data-tab-content>
-            <p>Our document translators are capable of general as well as industry-specific translations. Our extensive network of technical translators encompass specialty fields including legal, healthcare, education, social services, business and website localization.</p>
-          </div>
-        </li>
-        <li class="accordion-item" data-accordion-item>
-          <a href="#" class="accordion-title">10. What industries do you cover?</a>
-          <div class="accordion-content" data-tab-content>
-            <p>Our document translators are capable of general as well as industry-specific translations. Our extensive network of technical translators encompass specialty fields including legal, healthcare, education, social services, business and website localization.</p>
-          </div>
-        </li>
-      </ul>
-    </div>
+            <p>Being “certified” means your linguist has had his or her language proficiency skills assessed by a well-recognized industry testing agency. You can ensure that your linguist is certified by asking for the interpreter’s name and cross referencing it with the following certification agencies:</p>
+            <ul>
+              <li>California Judicial Council Court Certified and Court Registered legal interpreters</li>
+              <li>Federally Certified Interpreters</li>
+              <li>California State Personnel Board (Administrative and Medical) licensed interpreters</li>
+              <li>Certified Medical Interpreters (CMI)</li>
+              <li>The American Translators Association (ATA) -the only agency that gages translation skills</li>
+            </ul>
+          </p>
+        </div>
+      </li>
+      <li class="accordion-item" data-accordion-item>
+        <a href="#" class="accordion-title">5. What is the cost of interpretation services?</a>
+        <div class="accordion-content" data-tab-content>
+          <p>Factors that influence interpreter fees include certification levels required for the job, language, availability of interpreters, duration of the job, nature of the interpretation, mileage, travel time and/or lodging. Depending on the level of certification, there is usually a two hour to a half-day, industry practice, minimum requirement. Scheduling interpreter services in advance will help keep costs to a minimum.</p>
+        </div>
+      </li>
+      <li class="accordion-item" data-accordion-item>
+        <a href="#" class="accordion-title">6. What is the difference between interpretation and translation?</a>
+        <div class="accordion-content" data-tab-content>
+          <p>A translator converts the written text of one language into the text of the target language. An interpreter verbally converts the meaning of one spoken (source) language into the spoken (target) language of another. Simply said, interpreters speak and translators write. Each requires a distinct set of skills and aptitudes as well as mental dexterity and memory. Not everyone has equal capabilities. While some can translate and interpret, most can perform one but not both tasks. Even a smaller percentage of interpreters and translators can interpret, translate and sight translate.</p>
+        </div>
+      </li>
+      <li class="accordion-item" data-accordion-item>
+        <a href="#" class="accordion-title">7. What is the cost of translation services?</a>
+        <div class="accordion-content" data-tab-content>
+          <p>The cost of a translator depends on many factors: volume, language, turnaround times, whether formatting is required and technical subject matter. While most linguists charge a per word rate; some charge a per page rate. Although cost is important, it should not be the only consideration. You should consider who your audience is and how many people will come across the document. Is it for court, for publication or a reference piece for use within your organization?</p>
+        </div>
+      </li>
+      <li class="accordion-item" data-accordion-item>
+        <a href="#" class="accordion-title">8. What quality assurance steps do you have in place for document translation?</a>
+        <div class="accordion-content" data-tab-content>
+          <p>Translation projects involve a project manager and a three-step process: translate, review and edit. Usually at least two linguists work together to ensure that the product is accurate and complete. Professional translators are writers first and foremost; skilled at moving information between two languages and capable of producing text that reads well in the target language. At minimum, our translators must possess a Bachelor’s Degree and two years of continuous translating experience.</p>
+        </div>
+      </li>
+      <li class="accordion-item" data-accordion-item>
+        <a href="#" class="accordion-title">9. What industries do you cover?</a>
+        <div class="accordion-content" data-tab-content>
+          <p>Our document translators are capable of general as well as industry-specific translations. Our extensive network of technical translators encompass specialty fields including legal, healthcare, education, social services, business and website localization.</p>
+        </div>
+      </li>
+    </ul>
   </div>
+</div>
 </section>
 
 <!-- Testimonials -->
@@ -358,8 +373,8 @@
           <ul class="client-logos" data-equalizer-watch data-aos="fade" data-aos-easing="ease-in" data-aos-delay="200" data-aos-duration="600" data-aos-once="true">
             <li><img src="/assets/img/alamedacountyssa-logo.png" alt="Alameda County Social Services Logo"></li>
             <li><img src="/assets/img/department-of-education-logo.png" alt="Sacramento Department of Education Logo"></li>
+            <li><img src="/assets/img/anthem-logo.png" alt="Anthem Logo"></li>
             <li><img src="/assets/img/reichelplesser-logo.png" alt="Reichel Plesser Lawfirm Logo"></li>
-            <li><img src="/assets/img/healthnet-logo.png" alt="Healthnet Logo"></li>
           </ul>
         </div>
       </div>
@@ -370,6 +385,9 @@
     <div class="small-11 medium-6 columns">
       <div class="card testimonial" data-equalizer-watch>
         <p>“With particularly difficult clients the interpreters facilitate communication by working with the attorney to understand not just the words used but the cultural meaning of their communication.  I don’t think there is another translation company that can even begin to approach their competency.”</p>
+        <br>
+        <br>
+        <br>
         <div class="row">
           <div class="small-12 columns">
             <div class="testimonial-info">
@@ -386,16 +404,12 @@
 
     <div class="small-11 medium-6 columns">
       <div class="card testimonial" data-equalizer-watch>
-        <p>"Thank you Excel Interpreting for the excellent service. You’ve been great in navigating and making a difference in language barriers."</p>
-        <br>
-        <br>
-        <br>
-        <br>
+        <p>“My experience with using Excel has been very positive over the years. Both the in person verbal interpretation services as well as the written translations of documents have allowed us to provide services to families who are more comfortable speaking in a language other than English. Thanks again for dedicated and thorough service through the years.”</p>
         <div class="row">
           <div class="small-12 columns">
             <div class="testimonial-info">
-              <img src="/assets/img/prescott.png" alt="Prescott-Joseph Center Testimonial Logo">
-              <div class="testimonial-name"><span>Selena Urbino</span>Bilingual Family Advocate<br>Prescott-Joseph Center Inc. in Oakland, California</div>
+              <img src="/assets/img/casey-family.png" alt="Casey Family Testimonial Logo">
+              <div class="testimonial-name"><span>Tricia Blair</span>Family Engagement Liaison<br>Casey Family Programs</div>
             </div>
           </div>
         </div>
