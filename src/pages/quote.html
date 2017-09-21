@@ -3,22 +3,22 @@
 <!-- Intro -->
 <div class="banner">
   <h1 data-aos="fade" data-aos-delay="200" data-aos-duration="500" data-aos-once="true">Request a Quote</h1>
-  <p data-aos="fade" data-aos-delay="200" data-aos-duration="500" data-aos-once="true" class="sub-header">We’ll find the best fit for your needs</p>
+  <p data-aos="fade" data-aos-delay="200" data-aos-duration="500" data-aos-once="true" class="sub-header">Let our team help guide you and your clients to successful outcomes</p>
 </div>
 
 <section>
   <div class="row align-center">
     <div class="small-11 medium-9 columns">
-      <p class="sub-header textleft">With Excel’s extensive network of linguists and translation experience, you can raise your customer’s satisfaction and maintain it at the highest level – at the lowest reasonable cost.</p>
+      <p class="sub-header textleft">With Excel’s extensive network of linguists and translation experience, you can raise your customer’s experience and maintain it at the highest level – at the lowest reasonable cost. Follow these three easy steps:</p>
     </div>
   </div>
 
   <!-- Steps -->
-  <div class="row align-center">
+  <div class="row align-center" data-equalizer>
     <div class="small-11 medium-10 columns">
       <div class="row align-center">
         <div class="small-11 medium-10 large-4 columns">
-          <div class="card" data-aos="fade" data-aos-delay="400" data-aos-duration="800" data-aos-once="true">
+          <div class="card" data-aos="fade" data-aos-delay="400" data-aos-duration="800" data-aos-once="true" data-equalizer-watch>
             <img class="card-icon"  src="/assets/img/step1-icon.svg" alt="Certified Interpreters Icon">
             <h3>Provide Your Project Details</h3>
             <p>We’ll gather the important project details to ensure that we pair you with the most qualified linguist.</p>
@@ -26,15 +26,15 @@
         </div>
 
         <div class="small-11 medium-5 large-4 columns">
-          <div class="card" data-aos="fade" data-aos-delay="600" data-aos-duration="800" data-aos-once="true">
+          <div class="card" data-aos="fade" data-aos-delay="600" data-aos-duration="800" data-aos-once="true" data-equalizer-watch>
             <img class="card-icon"  src="/assets/img/step2-icon.svg" alt="Certified Interpreters Icon">
             <h3>Receive a Free Custom Quote</h3>
-            <p>Using our network of over 7000 expert linguists, we’ll provide you with a free customized quote.</p>
+            <p>Using  our network of over 7000 expert linguists, we’ll provide you with a free customized quote.</p>
           </div>
         </div>
 
         <div class="small-11 medium-5 large-4 columns">
-          <div class="card" data-aos="fade" data-aos-ease="ease-in-sine" data-aos-delay="800" data-aos-duration="800" data-aos-once="true">
+          <div class="card" data-aos="fade" data-aos-ease="ease-in-sine" data-aos-delay="800" data-aos-duration="800" data-aos-once="true" data-equalizer-watch>
             <img class="card-icon"  src="/assets/img/step3-icon.svg" alt="Certified Interpreters Icon">
             <h3>Confirm and Book Services</h3>
             <p>We’ll carefully outline the service details and secure your linguist for the duration of the project.</p>
@@ -57,57 +57,60 @@
   <div class="row align-center">
     <div class="small-11 medium-9 columns">
       <div class="card request-quote-form">
-        <h3>Project Details (Interpreting)</h3>
-        <div class="row">
-          <div class="small-12 medium-4 columns">
-            <label>Service Type<span class="required">*</span>
-              <select>
-                <option value="In-Person Interpreting">In-Person Interpreting</option>
-                <!-- <option value="Document Translation">Document Translation</option>
-                <option value="Telephone Interpreting">Telephone Interpreting</option> -->
-              </select>
-            </label>
+        <form data-abide>
+          <h3>Project Details (Interpreting)</h3>
+          <div class="row">
+            <div class="small-12 medium-4 columns">
+              <label>Service Type<span class="required">*</span>
+                <select>
+                  <option value="In-Person Interpreting">In-Person Interpreting</option>
+                  <!-- <option value="Document Translation">Document Translation</option>
+                  <option value="Telephone Interpreting">Telephone Interpreting</option> -->
+                </select>
+              </label>
+            </div>
+            <div class="small-12 medium-4 columns">
+              <label>Language<span class="required">*</span>
+                <div id="the-basics">
+                  <input class="typeahead" type="text" placeholder="Spanish" required pattern="[a-zA-Z]+">
+                  <small class="error">Error: name is required and must be a string.</small>
+                </div>
+              </label>
+            </div>
+            <div class="small-12 medium-4 columns">
+              <label>Date of Service<span class="required">*</span>
+                <input type="text" placeholder="09/20/2017">
+              </label>
+            </div>
           </div>
-          <div class="small-12 medium-4 columns">
-            <label>Language<span class="required">*</span>
-              <div id="the-basics">
-                <input class="typeahead" type="text" placeholder="Spanish">
-              </div>
-            </label>
+          <div class="row">
+            <div class="small-12 medium-4 columns">
+              <label>Scheduled Start Time<span class="required">*</span>
+                <input type="text" placeholder="8:30 AM">
+              </label>
+            </div>
+            <div class="small-12 medium-4 columns">
+              <label>Estimated Duration<span class="required">*</span>
+                <input type="text" placeholder="4.25 hours">
+              </label>
+            </div>
+            <div class="small-12 medium-4 columns">
+              <label>Service Zip Code<span class="required">*</span>
+                <input type="text" placeholder="95815">
+              </label>
+            </div>
           </div>
-          <div class="small-12 medium-4 columns">
-            <label>Date of Service<span class="required">*</span>
-              <input type="text" placeholder="09/20/2017">
-            </label>
+          <div class="row">
+            <div class="small-12 columns">
+              <label>
+                Service Description<span class="required">*</span>
+                <textarea rows="4" placeholder="Nature of request, setting, type of appointment, etc"></textarea>
+              </label>
+              <a href="#" class="button center-text hollow-light-blue">Attach a File</a>
+              <span>(Optional)</span>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="small-12 medium-4 columns">
-            <label>Scheduled Start Time<span class="required">*</span>
-              <input type="text" placeholder="8:30 AM">
-            </label>
-          </div>
-          <div class="small-12 medium-4 columns">
-            <label>Estimated Duration<span class="required">*</span>
-              <input type="text" placeholder="4.25 hours">
-            </label>
-          </div>
-          <div class="small-12 medium-4 columns">
-            <label>Service Zip Code<span class="required">*</span>
-              <input type="text" placeholder="95815">
-            </label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="small-12 columns">
-            <label>
-              Service Description<span class="required">*</span>
-              <textarea rows="4" placeholder="Nature of request, setting, type of appointment, etc"></textarea>
-            </label>
-            <a href="#" class="button center-text hollow-light-blue">Attach a File</a>
-            <span>(Optional)</span>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>
@@ -127,14 +130,15 @@
             </label>
           </div>
           <div class="small-12 medium-4 columns">
-            <label>Target Language<span class="required">*</span>
+            <label>Target Language<span class="required">*<span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="The language into which a text, document, or speech is translated."></span></span>
               <div id="the-basics">
                 <input class="typeahead" type="text" placeholder="Russian">
               </div>
             </label>
           </div>
           <div class="small-12 medium-4 columns">
-            <label>Source Language<span class="required">*</span>
+            <label>Source Language<span class="required">*<span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover="false" tabindex="1" title="The language being translated from."></span></span>
+
               <div id="the-basics">
                 <input class="typeahead" type="text" placeholder="English">
               </div>
