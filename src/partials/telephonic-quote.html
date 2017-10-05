@@ -6,106 +6,103 @@
         <div class="row align-center">
           <div class="small-12 medium-6 large-4 columns">
             <label>Service Type<span class="required">*</span>
-              <select id="excelservice">
-                <!-- <option value="interpreting">In-Person Interpreting</option> -->
-                <!-- <option value="translation">Document Translation</option> -->
-                <option value="telephonic">Telephone Interpreting</option>
-              </select>
-              <div id="states">states</div>
-            </label>
-          </div>
-          <div class="small-12 medium-6 large-4 columns">
-            <label>Language<span class="required">*</span>
-              <div id="the-basics">
-                <input class="typeahead" type="text" placeholder="Spanish" required pattern="[a-zA-Z]+">
-                <small class="error">Please include the language.</small>
-              </div>
-            </label>
-          </div>
-          <div class="small-12 medium-6 large-4 columns">
-            <label>Date of Service<span class="required">*</span>
-              <input type="text" placeholder="09/20/2017">
-              <small class="error">Please include a date.</small>
-            </label>
-          </div>
-          <div class="small-12 medium-6 large-4 columns">
-            <label>Scheduled Start Time<span class="required">*</span>
-              <input type="text" placeholder="8:30 AM">
-              <small class="error">Please include the time of service.</small>
-            </label>
-          </div>
-          <div class="small-12 medium-6 large-4 columns">
-            <label>Estimated Duration<span class="required">*</span>
-              <input type="text" placeholder="4.25 hours">
-              <small class="error">How long will you need the interpreter for?</small>
-            </label>
-          </div>
-          <div class="small-12 medium-6 large-4 columns">
-            <label>Call Type<span class="required">*</span>
               <select>
-                <option value="Default">Select</option>
-                <option value="Legal">Legal</option>
-                <option value="Healthcare">Health &amp; Medicine</option>
-                <option value="Education">Education</option>
-                <option value="Social-Services">Social Services</option>
-                <option value="Other">Other</option>
+                <!-- <option value="In-Person Interpreting">In-Person Interpreting</option> -->
+                <!-- <option value="Document Translation">Document Translation</option> -->
+                <option value="Telephone Interpreting">Telephone Interpreting</option>
               </select>
-              <small class="error">What is the call regarding?</small>
             </label>
-          </div>
         </div>
-        <div class="row">
-          <div class="small-12 columns">
-            <label>
-              Service Description<span class="required">*</span>
-              <textarea rows="4" placeholder="Nature of phone call (ie. accident report), special requirements, etc"></textarea>
-              <small class="error">Please give us a little more information about your project.</small>
-            </label>
-            <a href="#" class="button center-text hollow-light-blue">Attach a File</a>
-            <span>(Optional)</span>
-          </div>
+        <div class="small-12 medium-6 large-4 columns">
+          <label>Target Language<span class="required">*</span>
+            <input type="text" placeholder="Russian">
+            <small class="error">Please include the language.</small>
+          </label>
         </div>
-      </form>
-    </div>
-    <div class="card request-quote-form">
-      <form data-abide>
-        <h3>Who can we speak to?</h3>
-        <div class="row align-center">
-          <div class="small-12 medium-6 columns">
-            <label>Your Name<span class="required">*</span>
-              <input type="text" placeholder="">
-              <small class="error">We'll need this in case we have follow-up questions.</small>
-            </label>
-          </div>
-          <div class="small-12 medium-6 columns">
-            <label>Company/Organization<span class="required">*</span>
-              <input type="text" placeholder="">
-              <small class="error">Please complete this field.</small>
-            </label>
-          </div>
-          <div class="small-12 medium-6 columns">
-            <label>Phone<span class="required">*</span>
-              <input type="text" placeholder="">
-              <small class="error">Please complete this field.</small>
-            </label>
-          </div>
-          <div class="small-12 medium-6 columns">
-            <label>E-mail<span class="required">*</span>
-              <input type="text" placeholder="">
-              <small class="error">Please complete this field.</small>
-            </label>
-          </div>
+        <div class="small-12 medium-6 large-4 columns">
+          <label>Date of Service<span class="required">*</span>
+            <input type="text" placeholder="12/20/2017">
+            <small class="error">Please include a date.</small>
+          </label>
         </div>
-      </form>
-    </div>
-    <div class="row text-center align-center">
-      <div class="small-11 medium-9 columns">
-        <div class="quote-checkbox">
-          <input id="checkbox1" type="checkbox" checked><label for="checkbox1">Send me a copy to my e-mail</label>
+        <div class="small-12 medium-6 large-4 columns">
+          <label>Scheduled Start Time<span class="required">*</span>
+            <input type="text" placeholder="8:30 AM">
+            <small class="error">Please include the time of service.</small>
+          </label>
         </div>
-        <div class="g-recaptcha" data-sitekey="6LeBKzIUAAAAADBjLfQ9y7ETypD9QmRD266vkEF_"></div>
-        <a href="#" class="button center-text dark-blue">Submit My Request</a>
+        <div class="small-12 medium-6 large-4 columns">
+          <label>Estimated Duration<span class="required">*</span>
+            <input type="text" placeholder="1.50 hours">
+            <small class="error">How long will you need the interpreter for?</small>
+          </label>
+        </div>
+        <div class="small-12 medium-6 large-4 columns">
+          <label>Call Type<span class="required">*</span>
+            <select>
+              <option value="Default">Select</option>
+              <option value="Legal">Legal</option>
+              <option value="Healthcare">Health &amp; Medicine</option>
+              <option value="Education">Education</option>
+              <option value="Social-Services">Social Services</option>
+              <option value="Other">Other</option>
+            </select>
+            <small class="error">What is the call regarding?</small>
+          </label>
+        </div>
       </div>
+      <div class="row">
+        <div class="small-12 columns">
+          <label>
+            Service Description<span class="required">*</span>
+            <textarea rows="4" placeholder="Nature of phone call (ie. accident report), special requirements, etc"></textarea>
+            <small class="error">Please give us a little more information about your project.</small>
+          </label>
+          <a href="#" class="button center-text hollow-light-blue">Attach a File</a>
+          <span>(Optional)</span>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="card request-quote-form">
+    <form data-abide>
+      <h3>Who can we speak to?</h3>
+      <div class="row align-center">
+        <div class="small-12 medium-6 columns">
+          <label>Your Name<span class="required">*</span>
+            <input type="text" placeholder="">
+            <small class="error">We'll need this in case we have follow-up questions.</small>
+          </label>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <label>Company/Organization<span class="required">*</span>
+            <input type="text" placeholder="">
+            <small class="error">Please complete this field.</small>
+          </label>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <label>Phone<span class="required">*</span>
+            <input type="text" placeholder="">
+            <small class="error">Please complete this field.</small>
+          </label>
+        </div>
+        <div class="small-12 medium-6 columns">
+          <label>E-mail<span class="required">*</span>
+            <input type="text" placeholder="">
+            <small class="error">Please complete this field.</small>
+          </label>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="row text-center align-center">
+    <div class="small-11 medium-9 columns">
+      <div class="quote-checkbox">
+        <input id="checkbox1" type="checkbox" checked><label for="checkbox1">Send me a copy to my e-mail</label>
+      </div>
+      <div class="g-recaptcha" data-sitekey="6LeBKzIUAAAAADBjLfQ9y7ETypD9QmRD266vkEF_"></div>
+      <a href="#" class="button center-text dark-blue">Submit My Request</a>
     </div>
   </div>
+</div>
 </div>
