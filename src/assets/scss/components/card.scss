@@ -22,12 +22,25 @@
     h3 { color: $black;}
 
     &:hover {
-      cursor: pointer;
       box-shadow: 0px 0px 40px #DDD;
 
       .services-image {
         transform: scale(1.03);
       }
+    }
+  }
+
+  .card-link {
+    color: $dark-grey;
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    letter-spacing: .5px;
+    margin-top: rem-calc(32);
+    font-size: rem-calc(15);
+
+    &:hover {
+      color: $dark-blue;
     }
   }
 

@@ -128,11 +128,15 @@ footer {
   width: 100%;
 
   @include breakpoint(medium up) {
-    max-height: rem-calc(500);
+    max-height: rem-calc(620);
   }
 
   .contactus-cta-details {
     text-align: center;
+
+    .icon-left-small+.icon-left-small {
+      margin-top: rem-calc(32);
+    }
 
     @include breakpoint(medium up) {
       text-align: left;

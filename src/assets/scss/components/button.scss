@@ -66,3 +66,7 @@
     }
   }
 }
+
+.button + .button {
+  margin-left: rem-calc(8);
+}
