@@ -77,8 +77,8 @@ footer {
         width: auto;
 
         @include breakpoint(large up) {
-          margin: auto rem-calc(11);
-          height: rem-calc(63);
+          margin: auto rem-calc(9);
+          height: rem-calc(70);
         }
       }
     }
