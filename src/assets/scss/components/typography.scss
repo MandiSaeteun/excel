@@ -17,6 +17,12 @@ section {
   }
 }
 
+.announcement-icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: rem-calc(36);
+}
+
 .inline-link {
   color: $dark-grey;
   text-decoration: underline;
