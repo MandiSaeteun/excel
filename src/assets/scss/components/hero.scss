@@ -92,10 +92,19 @@
 
 .herounit.translating {
   background: url('../img/excel-translating-sacramento-heropage.png') no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   background-size: cover;
-  min-height: rem-calc(600);
+  min-height: rem-calc(475);
   width: 100%;
+
+  p {
+    display: inline-block;
+    font-size: rem-calc(24);
+    text-align: center;
+    color: $white;
+    padding-top: 0;
+    margin-top: 0;
+  }
 
   @include breakpoint(medium) {
     background: url('../img/excel-translating-sacramento-heropage.png') no-repeat;
@@ -103,36 +112,32 @@
     background-position: center bottom;
     min-height: rem-calc(550);
     width: 100%;
+    font-size: rem-calc(26);
   }
 
   @include breakpoint(large up) {
     background: url('../img/excel-translating-sacramento-heropage.png') no-repeat;
     background-size: cover;
-    background-position: center top;
+    background-position: center bottom;
     min-height: rem-calc(575);
     width: 100%;
   }
 
   h1 {
-    padding-top: rem-calc(116);
-    font-size: rem-calc(24);
+    padding-top: rem-calc(120);
+    font-size: rem-calc(26);
     text-align: center;
     color: $white;
 
     @include breakpoint(medium) {
-      padding-top: rem-calc(160);
-      font-size: rem-calc(26);
+      padding-top: rem-calc(200);
+      font-size: rem-calc(32);
     }
 
     @include breakpoint(large up) {
-      padding-top: rem-calc(225);
+      padding-top: rem-calc(186);
       font-size: rem-calc(36);
     }
-  }
-
-  p {
-    color: $white;
-    text-align: center;
   }
 
   .hero-buttons {
@@ -142,5 +147,6 @@
   .herounit-text {
     display: block;
     margin: auto 0;
+    text-align: center;
   }
 }

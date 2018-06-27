@@ -50,15 +50,30 @@ $('a[href*="#"]')
 });
 
 
-// $(document).ready(function() {
-//   $('#excelservice').on('change.states', function() {
-//     $("#states").toggle($(this).val() == 'telephonic');
-//   }).trigger('change.states');
-// // });
-//
-// $('#country').on('change', function() {
-//   if ( this.value == 'USA')
-//     $("#states").show();
-//   else
-//     $("#states").hide();
-// }).trigger("change"); // notice this line
+//Counter by Geoff Kimball <3
+// Element to apply the number to (swap out the '[data-count]' with whatever HTML you're using)
+var countElement = document.querySelector('[data-count]');
+
+// Starting point for the timer (the farther back in time, the bigger the starting number)
+var start = (new Date(2018, 4, 30)).getTime();
+// Frequency with which the timer is updated (in milliseconds)
+var timeInterval = 800;
+// Number to increment by each intervak
+var wordInterval = 1;
+
+function calculate() {
+  // Calculate the amount of time that's passed since the starting point
+  var timeOffset = Date.now() - start;
+
+  // Calculate what the new number should be
+  var count = Math.round((timeOffset / timeInterval) * wordInterval);
+
+  // Add commas to the number and then insert it into the HTML
+  countElement.textContent = count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+// Run this function forever
+setInterval(calculate, timeInterval);
+
+// Run it once on page load
+calculate();
