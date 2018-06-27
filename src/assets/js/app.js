@@ -55,9 +55,9 @@ $('a[href*="#"]')
 var countElement = document.querySelector('[data-count]');
 
 // Starting point for the timer (the farther back in time, the bigger the starting number)
-var start = (new Date(2018, 4, 30)).getTime();
+var start = (new Date(2018, 5, 1)).getTime();
 // Frequency with which the timer is updated (in milliseconds)
-var timeInterval = 800;
+var timeInterval = 650;
 // Number to increment by each intervak
 var wordInterval = 1;
 
